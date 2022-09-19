@@ -1,0 +1,95 @@
+header {
+  height: 6rem;
+  background: #F1F1F3;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1.6rem;
+  color: #000;
+
+  .logo {
+    img {
+      background: transparent;
+      width: 4rem;
+      height: 4rem;
+      margin-left: 3rem;
+    }
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+
+  .responsive {
+    flex: 1;
+
+    .nav-options {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-left: 3.8rem;
+      margin-right: 5rem;
+
+      .nav-bar {
+        width: 50rem;
+
+        ul {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+
+          li a {
+            transition: color .2s;
+
+            &:hover {
+              color: #0095DA;
+            }
+          }
+
+        }
+      }
+
+      .login {
+        width: 25rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: center;
+
+        div:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  header {
+    justify-content: space-between;
+    padding: 0 2rem;
+    max-height: 4.8rem;
+
+    .logo {
+      img {
+        max-width: 3.2rem;
+        max-height: 3.2rem;
+        margin-left: 0
+      }
+    }
+
+    .mobile-menu {
+      display: block;
+      width: 2.5rem;
+    }
+
+    .responsive {
+      display: none;
+    }
+  }
+}
+
+.activated {
+  color: #0095DA;
+}

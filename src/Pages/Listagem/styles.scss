@@ -1,0 +1,78 @@
+.section-title {
+  height: 8.6rem;
+  max-height: 86px;
+  display: flex;
+  padding: 0 4.8rem 0 4rem;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #E5E5E5;
+
+  .page-title h1 {
+    font-size: 2.6rem;
+    font-weight: bold;
+  }
+
+  .page-title p {
+    color: #666666;
+    font-size: 1.8rem;
+    line-height: 1.9rem;
+  }
+
+  .add-buttons .btn {
+    margin-right: 1.8rem;
+  }
+}
+
+.section-search-input {
+  display: flex;
+  flex-direction: row;
+  margin: 4rem 0 3.4rem 15.6%;
+  /* left = 30rem */
+
+  .input {
+    width: 69.4rem;
+    height: 4.6rem;
+    border: 1px solid #C8C8C8;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 1.5rem;
+    margin-right: 2rem;
+
+    input {
+      width: 95%;
+      height: 4.6rem;
+      background-color: transparent;
+      padding-left: 1.5rem;
+      font-size: 1.6rem;
+    }
+  }
+
+  Button{
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 799px){
+  .section-title {
+
+    .add-buttons{
+      display: none;
+    }
+    .page-title{
+      margin: 0 auto;
+      text-align: center;
+      
+      p{
+        margin-top: 0.5rem;
+        font-size: 1.6rem;
+      }
+    }
+  }
+  .section-search-input{
+    margin: 3.5rem auto;
+    width: 80%;
+  }
+}
