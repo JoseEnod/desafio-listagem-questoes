@@ -50,28 +50,36 @@
     }
   }
 
-  Button{
+  Button {
     margin-right: 10px;
   }
 }
 
-@media (max-width: 799px){
+@media (max-width: 1280px) {
+  .section-search-input {
+    margin: 4rem 10% 3.4rem 20%;
+  }
+}
+
+@media (max-width: 799px) {
   .section-title {
 
-    .add-buttons{
+    .add-buttons {
       display: none;
     }
-    .page-title{
+
+    .page-title {
       margin: 0 auto;
       text-align: center;
-      
-      p{
+
+      p {
         margin-top: 0.5rem;
         font-size: 1.6rem;
       }
     }
   }
-  .section-search-input{
+
+  .section-search-input {
     margin: 3.5rem auto;
     width: 80%;
   }

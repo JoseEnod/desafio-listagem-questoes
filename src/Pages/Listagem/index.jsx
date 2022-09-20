@@ -5,6 +5,7 @@ import {MagnifyingGlass} from 'phosphor-react';
 
 import {Header} from '../../components/Header';
 import {Button} from '../../components/Button';
+import {SideBarStages} from '../../components/SideBarStages';
 
 
 export function Listagem() {
@@ -45,6 +46,9 @@ export function Listagem() {
       transparent
       height={46}
       />
+    </div>
+    <div className="section-results-area">
+      <SideBarStages />
     </div>
     </div>
   );
