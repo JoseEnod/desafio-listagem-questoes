@@ -1,6 +1,5 @@
 .section-title {
   height: 8.6rem;
-  max-height: 86px;
   display: flex;
   padding: 0 4.8rem 0 4rem;
   flex-direction: row;
@@ -55,17 +54,36 @@
   }
 }
 
+.section-results-area {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 @media (max-width: 1280px) {
   .section-search-input {
     margin: 4rem 10% 3.4rem 20%;
+
+    Button:last-child {
+      min-width: 17rem;
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .section-results-area {
+    flex-direction: column;
   }
 }
 
 @media (max-width: 799px) {
   .section-title {
+    flex-direction: column;
+    padding: 2rem 0;
+    height: 15rem;
 
     .add-buttons {
-      display: none;
+      margin-right: -1.8rem;
     }
 
     .page-title {
@@ -80,7 +98,26 @@
   }
 
   .section-search-input {
-    margin: 3.5rem auto;
+    margin: 3.5rem auto 2rem auto;
     width: 80%;
+  }
+}
+
+@media (max-width: 600px) {
+  .section-search-input {
+    width: 90%;
+
+    .input {
+      margin-right: 1rem;
+    }
+
+    Button {
+      margin: 0;
+
+      &:last-child {
+        display: none;
+      }
+    }
+
   }
 }
