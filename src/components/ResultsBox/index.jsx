@@ -1,5 +1,3 @@
-import React from 'react'
-
 import './styles.scss';
 
 import { Circle } from 'phosphor-react';
@@ -16,7 +14,7 @@ export function ResultsBox() {
         <th>Opções</th>
       </tr>
       <tr className="data">
-        <td><Circle size={20} color="#494949" weight="bold" className="mark-circle" /></td>
+        <td><Circle size={20} color="#494949" weight="fill" className="mark-circle" /></td>
         <td className="cod">00371</td>
         <td>
           <div className="enunciado">
